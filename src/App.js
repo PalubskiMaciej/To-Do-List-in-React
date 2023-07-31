@@ -5,7 +5,7 @@ import Tasks from "./Tasks";
 
 const tasks = [
   { id: 1, content: "Przerobić listę na React", done: false },
-  { id: 1, content: "Wrócić z pracy", done: true },
+  { id: 2, content: "Wrócić z pracy", done: true },
 ];
 
 const hideDoneTasks = false;
