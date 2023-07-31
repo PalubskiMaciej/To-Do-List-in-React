@@ -1,6 +1,7 @@
 import "./App.css";
 import Form from "./Form";
 import Buttons from "./Buttons";
+import Tasks from "./Tasks";
 
 const tasks = [
   { id: 1, content: "Przerobić listę na React", done: false },
@@ -28,7 +29,7 @@ function App() {
             </h2>
             <Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />
           </div>
-          <ul className="js-list list"></ul>
+          <Tasks tasks={tasks} />
         </section>
       </main>
     </div>
