@@ -1,13 +1,13 @@
 import "./style.css";
 
 const Form = () => (
-  <form class="js-form form">
+  <form className="js-form form">
     <input
-      class="js-newTask form__input"
-      autofocus
+      className="js-newTask form__input"
+      autoFocus
       placeholder="Co jest do zrobienia?"
     />
-    <button class="js-button form__button">Dodaj zadanie</button>
+    <button className="js-button form__button">Dodaj zadanie</button>
   </form>
 );
 
