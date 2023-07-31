@@ -1,7 +1,7 @@
 import "./style.css";
 
 const Buttons = ({ tasks, hideDoneTasks }) => {
-  if (tasks.lenght > 0) {
+  if (tasks.length > 0) {
     return (
       <div className="buttons">
         <button className="buttons__button js-toggleHideDoneTasksButton">
