@@ -29,7 +29,7 @@ function App() {
             </h2>
             <Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />
           </div>
-          <Tasks tasks={tasks} />
+          <Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />
         </section>
       </main>
     </div>
