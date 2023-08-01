@@ -4,6 +4,7 @@ import Buttons from "./Buttons";
 import Tasks from "./Tasks";
 import Section from "./Section";
 import Header from "./Header";
+import Container from "./Container";
 
 const tasks = [
   { id: 1, content: "Przerobić listę na React", done: false },
@@ -14,7 +15,7 @@ const hideDoneTasks = false;
 
 function App() {
   return (
-    <main>
+    <Container>
       <Header title="Lista zadań" />
       <Section title="Dodaj nowe zadanie" body={<Form />} />
       <Section
@@ -24,7 +25,7 @@ function App() {
         }
         body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />}
       />
-    </main>
+    </Container>
   );
 }
 
