@@ -4,7 +4,7 @@ const Buttons = ({ tasks, hideDone }) => {
   if (tasks.length > 0) {
     return (
       <div className="buttons">
-        <button className="buttons__button js-togglehideDoneButton">
+        <button className="buttons__button">
           {hideDone ? "Pokaż" : "Ukryj"} ukończone
         </button>
         <button
