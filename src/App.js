@@ -15,6 +15,22 @@ function App() {
     { id: 2, content: "Wrócić z pracy", done: true },
   ]);
 
+  const addNewTask = (content) => {
+    setTasks((tasks) => {
+      if (content === "") {
+        return [...tasks];
+      }
+      return [
+        ...tasks,
+        {
+          content,
+          done: false,
+          id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
+        },
+      ];
+    });
+  };
+
   const toggleHideDone = () => {
     setHideDone((hideDone) => !hideDone);
   };
@@ -51,7 +67,10 @@ function App() {
   return (
     <Container>
       <Header title="Lista zadań" />
-      <Section title="Dodaj nowe zadanie" body={<Form />} />
+      <Section
+        title="Dodaj nowe zadanie"
+        body={<Form addNewTask={addNewTask} />}
+      />
       <Section
         title="Lista zadań"
         extraHeaderContent={
